@@ -8,6 +8,7 @@ namespace TransactionSurcharge
     {
         /// <summary>
         /// Please Change the file Path for the configuration file
+        /// file type is json
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
@@ -64,14 +65,16 @@ namespace TransactionSurcharge
 
             foreach (var elem in serialized.fees)
             {
-                //case of where customer payment amount is less than charges
-                if (input<elem.feeAmount)
-                {
-                    customer = null;
-                }
 
                 if (input >= elem.minAmount && input <= elem.maxAmount)
                 {
+                    //case of where customer payment amount is less than charges
+                    if (input <= elem.feeAmount)
+                    {
+                        customer = null;
+                        break;
+                    }
+
                     customer.Amount = input;
                     customer.Charge = elem.feeAmount;
                     customer.TransferAmount = input - elem.feeAmount;
