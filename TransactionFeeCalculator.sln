@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionFeeCalculator", "TransactionFeeCalculator\TransactionFeeCalculator.csproj", "{91C1790D-588F-4080-A19F-B4B520E52685}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionSurcharge", "TransactionSurcharge\TransactionSurcharge.csproj", "{9291B13E-1CCF-453C-ADA5-8CE9CAD10746}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{91C1790D-588F-4080-A19F-B4B520E52685}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91C1790D-588F-4080-A19F-B4B520E52685}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91C1790D-588F-4080-A19F-B4B520E52685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9291B13E-1CCF-453C-ADA5-8CE9CAD10746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9291B13E-1CCF-453C-ADA5-8CE9CAD10746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9291B13E-1CCF-453C-ADA5-8CE9CAD10746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9291B13E-1CCF-453C-ADA5-8CE9CAD10746}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

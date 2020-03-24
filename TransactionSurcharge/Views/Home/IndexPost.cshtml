@@ -1,0 +1,49 @@
+﻿@model IEnumerable<TransactionSurcharge.CustomerModel>
+
+@{
+    ViewBag.Title = "IndexPost";
+}
+
+<h2>Table for Transaction Breakdown</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TransferAmount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Charge)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DebitAmount)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransferAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Charge)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DebitAmount)
+            </td>
+
+        </tr>
+    }
+
+</table>
+<div>
+    <h3>
+        @ViewBag.Error
+    </h3>
+</div>
