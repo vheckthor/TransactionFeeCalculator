@@ -21,7 +21,7 @@ namespace TransactionSurcharge
             }
 
             //please change the file path to use this program
-            string path= @"C:\Users\adeba\Desktop\parkwaypath\fees.config.json";
+            string path= @"C:\Users\path\path\path\fees.config.json";
             //path to where configuration file is located
 
             string filePath = path;
