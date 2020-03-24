@@ -1,22 +1,10 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
 using System.IO;
 
 
 namespace TransactionFeeCalculator
 {
-    public class Fee
-    {
-        public int minAmount { get; set; }
-        public int maxAmount { get; set; }
-        public int feeAmount { get; set; }
-    }
-
-    public class FeesAndCharges
-    {
-        public List<Fee> fees { get; set; }
-    }
     class Program
     {
         /// <summary>
@@ -27,7 +15,7 @@ namespace TransactionFeeCalculator
         static void Main(string[] args)
         {
 
-            
+            //program runs until it is closed.
             while (true)
             {
                 Console.Write("Please input the Transaction Amount: ");
@@ -50,7 +38,7 @@ namespace TransactionFeeCalculator
                 Console.Write("Your Charges is: ");
                 Console.WriteLine(content); 
             }
-            //Console.ReadKey();
+
         }
 
         static int FileReader(string path,int input)
