@@ -1,0 +1,8 @@
+C:\Users\adeba\source\repos\TransactionFeeCalculator\TransactionFeeCalculator\obj\Debug\TransactionFeeCalculator.csprojAssemblyReference.cache
+C:\Users\adeba\source\repos\TransactionFeeCalculator\TransactionFeeCalculator\bin\Debug\TransactionFeeCalculator.exe
+C:\Users\adeba\source\repos\TransactionFeeCalculator\TransactionFeeCalculator\bin\Debug\TransactionFeeCalculator.pdb
+C:\Users\adeba\source\repos\TransactionFeeCalculator\TransactionFeeCalculator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\adeba\source\repos\TransactionFeeCalculator\TransactionFeeCalculator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\adeba\source\repos\TransactionFeeCalculator\TransactionFeeCalculator\obj\Debug\TransactionFeeCalculator.csproj.CopyComplete
+C:\Users\adeba\source\repos\TransactionFeeCalculator\TransactionFeeCalculator\obj\Debug\TransactionFeeCalculator.exe
+C:\Users\adeba\source\repos\TransactionFeeCalculator\TransactionFeeCalculator\obj\Debug\TransactionFeeCalculator.pdb
