@@ -22,7 +22,7 @@ namespace TransactionSurcharge
             }
 
             //please change the file path to use this program
-            string path= @"C:\Users\path\path\path\fees.config.json";
+            string path= @"C:\Users\adeba\desktop\parkwaypath\fees.config.json";
             //path to where configuration file is located
 
             string filePath = path;
@@ -62,27 +62,42 @@ namespace TransactionSurcharge
             
             var customer = new CustomerModel();
 
+            int checker = 0;
+
+            foreach (var elem in serialized.fees)
+            {
+                //case of where customer payment amount is less than charges
+                if (input <= elem.feeAmount)
+                {
+                    customer = null;
+                    break;
+                }
+                if (input >= elem.minAmount && input <= elem.maxAmount)
+                {
+                    checker = input - elem.feeAmount;
+                }
+
+                customer.Amount = input;
+
+                customer.TransferAmount = checker;
+            }
 
             foreach (var elem in serialized.fees)
             {
 
-                if (input >= elem.minAmount && input <= elem.maxAmount)
+                if ( checker>= elem.minAmount && checker <= elem.maxAmount)
                 {
-                    //case of where customer payment amount is less than charges
-                    if (input <= elem.feeAmount)
-                    {
-                        customer = null;
-                        break;
-                    }
 
-                    customer.Amount = input;
+
+                 
                     customer.Charge = elem.feeAmount;
-                    customer.TransferAmount = input - elem.feeAmount;
+                 
                     customer.DebitAmount = customer.TransferAmount + elem.feeAmount;
                     
                 }
 
             }
+
             return customer;
         }
     }
